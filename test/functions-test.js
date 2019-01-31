@@ -43,6 +43,32 @@ describe('functions', function() {
         ['', 'function', 'stop'],
       ],
     ],
+    [
+      '0-SUM(OFFSET(Q75,,,1,0-MIN($L72,+Admin!Q36)))/$L72',
+      [
+        ['0', 'operand', 'number'],
+        ['-', 'operator-infix', 'math'],
+        ['SUM', 'function', 'start'],
+        ['OFFSET', 'function', 'start'],
+        ['Q75', 'operand', 'range'],
+        [',', 'argument', ''],
+        [',', 'argument', ''],
+        [',', 'argument', ''],
+        ['1', 'operand', 'number'],
+        [',', 'argument', ''],
+        ['0', 'operand', 'number'],
+        ['-', 'operator-infix', 'math'],
+        ['MIN', 'function', 'start'],
+        ['$L72', 'operand', 'range'],
+        [',', 'argument', ''],
+        ['Admin!Q36', 'operand', 'range'],
+        ['', 'function', 'stop'],
+        ['', 'function', 'stop'],
+        ['', 'function', 'stop'],
+        ['/', 'operator-infix', 'math'],
+        ['$L72', 'operand', 'range'],
+      ],
+    ],
   ].forEach(itBlock);
 
   describe('i18n', function() {
