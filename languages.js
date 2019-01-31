@@ -9,15 +9,17 @@ module.exports = {
     // decimal point in numbers
     decimalSeparator: '.',
     // returns number string that can be parsed by Number()
-    reformatNumberForJsParsing: function(n) {return n;}
+    reformatNumberForJsParsing: function(n) {
+      return n;
+    },
   },
   'de-DE': {
     true: 'WAHR',
     false: 'FALSCH',
-    argumentSeparator: ';',
-    decimalSeparator: ',',
+    argumentSeparator: ',',
+    decimalSeparator: '.',
     reformatNumberForJsParsing: function(n) {
-      return n.replace(',', '.');
-    }
-  }
+      return n;
+    },
+  },
 };
