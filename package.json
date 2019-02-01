@@ -1,6 +1,6 @@
 {
-  "name": "excel-formula-tokenizer",
-  "version": "2.3.0",
+  "name": "@modelmap/excel-formula-tokenizer",
+  "version": "2.3.1",
   "description": "Tokenize Excel formulas",
   "main": "index.js",
   "typings": "index.d.ts",
@@ -8,14 +8,18 @@
     "test": "mocha test/*-test.js"
   },
   "keywords": ["excel", "formula", "parse", "tokenize"],
-  "author": "Paul Salaets <psalaets@gmail.com>",
+  "author": "Atsushi Nagase <ngs@modelmap.co> (https://ngs.io)",
+  "contributors": ["Paul Salaets <psalaets@gmail.com>"],
   "homepage": "https://github.com/psalaets/excel-formula-tokenizer",
   "repository": {
     "type": "git",
-    "url": "https://github.com/psalaets/excel-formula-tokenizer.git"
+    "url": "https://github.com/modelmap/excel-formula-tokenizer.git"
   },
   "license": "MIT",
   "devDependencies": {
     "mocha": "^3.2.0"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
