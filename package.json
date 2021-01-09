@@ -7,9 +7,16 @@
   "scripts": {
     "test": "mocha test/*-test.js"
   },
-  "keywords": ["excel", "formula", "parse", "tokenize"],
+  "keywords": [
+    "excel",
+    "formula",
+    "parse",
+    "tokenize"
+  ],
   "author": "Atsushi Nagase <ngs@modelmap.co> (https://ngs.io)",
-  "contributors": ["Paul Salaets <psalaets@gmail.com>"],
+  "contributors": [
+    "Paul Salaets <psalaets@gmail.com>"
+  ],
   "homepage": "https://github.com/psalaets/excel-formula-tokenizer",
   "repository": {
     "type": "git",

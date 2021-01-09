@@ -566,7 +566,7 @@ function tokenize(formula, options) {
   while (tokens2.moveNext()) {
     token = tokens2.current();
 
-    if (token.type == TOK_TYPE_OP_IN && token.value == '-') {
+    if (token.type == TOK_TYPE_OP_IN && (token.value == '-' || token.value == '+')) {
       if (tokens2.BOF()) {
         token.type = TOK_TYPE_OP_PRE;
       } else if (

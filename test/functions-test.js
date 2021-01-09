@@ -61,6 +61,7 @@ describe('functions', function() {
         ['MIN', 'function', 'start'],
         ['$L72', 'operand', 'range'],
         [',', 'argument', ''],
+        ['+', 'operator-prefix', ''],
         ['Admin!Q36', 'operand', 'range'],
         ['', 'function', 'stop'],
         ['', 'function', 'stop'],

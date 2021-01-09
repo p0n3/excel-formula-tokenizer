@@ -29,7 +29,7 @@ describe('arithmetic expressions', function() {
       ],
     ],
     ['-1', [['-', 'operator-prefix', ''], ['1', 'operand', 'number']]],
-    ['+1', [['1', 'operand', 'number']]],
+    ['+1', [['+', 'operator-prefix', ''], ['1', 'operand', 'number']]],
     ['1%', [['1', 'operand', 'number'], ['%', 'operator-postfix', '']]],
     [
       '-(1 + 2)',
