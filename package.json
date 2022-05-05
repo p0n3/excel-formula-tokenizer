@@ -1,6 +1,6 @@
 {
   "name": "@p0n3/excel-formula-tokenizer",
-  "version": "2.3.3",
+  "version": "2.3.4",
   "description": "Tokenize Excel formulas",
   "main": "index.js",
   "typings": "index.d.ts",
@@ -21,7 +21,7 @@
   "homepage": "https://github.com/psalaets/excel-formula-tokenizer",
   "repository": {
     "type": "git",
-    "url": "https://github.com/modelmap/excel-formula-tokenizer.git"
+    "url": "https://github.com/p0n3/excel-formula-tokenizer.git"
   },
   "license": "MIT",
   "devDependencies": {
