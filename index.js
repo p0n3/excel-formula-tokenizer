@@ -277,9 +277,9 @@ function tokenize(formula, options) {
 
     if (inNumeric) {
       if (
-        ([language.decimalSeparator, 'E', '+', '-'].indexOf(currentChar()) !=
-          -1 &&
-          /[\d\.E\+\-]/.test(nextChar())) ||
+        (currentChar() == language.decimalSeparator && /[\dE]/.test(nextChar())) ||
+        (currentChar() == 'E' && /[\d\+\-]/.test(nextChar())) ||
+        (['+', '-'].indexOf(currentChar()) !=-1 && /[\d\+\-]/.test(nextChar()) && token.length > 0 && token[token.length-1] == 'E') ||
         /\d/.test(currentChar())
       ) {
         inNumeric = true;

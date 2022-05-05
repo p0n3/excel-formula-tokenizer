@@ -53,6 +53,16 @@ describe('arithmetic expressions', function() {
         ['%', 'operator-postfix', ''],
       ],
     ],
+    [
+      '2+2*2',
+      [
+        ['2', 'operand', 'number'],
+        ['+', 'operator-infix', 'math'],
+        ['2', 'operand', 'number'],
+        ['*', 'operator-infix', 'math'],
+        ['2', 'operand', 'number'],
+      ],
+    ],
   ].forEach(itBlock);
 
   describe('i18n', function() {
