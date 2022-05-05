@@ -36,6 +36,9 @@ describe('cell ranges', function () {
       ['A10:E20', [
         ['A10:E20', 'operand', 'range']
       ]],
+      ['A1#', [
+        ['A1#', 'operand', 'range']
+      ]],
     ]
     .forEach(itBlock);
   });
@@ -65,7 +68,10 @@ describe('cell ranges', function () {
       ]],
       ['C', [
         ['C', 'operand', 'range']
-      ]]
+      ]],
+      ['RC[-2]#', [
+        ['RC[-2]#', 'operand', 'range']
+      ]],
     ]
     .forEach(itBlock);
   });

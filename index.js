@@ -172,7 +172,7 @@ function tokenize(formula, options) {
 
     while (offsetCopy < formula.length) {
       if (!/\d/.test(formula[offsetCopy])) {
-        return /:/.test(formula[offsetCopy]);
+        return /[:#]/.test(formula[offsetCopy]);
       }
 
       offsetCopy += 1;
@@ -373,18 +373,6 @@ function tokenize(formula, options) {
 
     if (currentChar() == '[') {
       inRange = true;
-      token += currentChar();
-      offset += 1;
-      continue;
-    }
-
-    if (currentChar() == '#') {
-      if (token.length > 0) {
-        // not expected
-        tokens.add(token, TOK_TYPE_UNKNOWN);
-        token = '';
-      }
-      inError = true;
       token += currentChar();
       offset += 1;
       continue;
