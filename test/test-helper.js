@@ -20,8 +20,8 @@ function itBlock([formula, expected, options]) {
 */
 function assertTokens(actual, expected) {
   expected = expected.map(tuple => {
-    const [value, type, subtype] = tuple;
-    return {value, type, subtype};
+    const [value, type, subtype, attributes] = tuple;
+    return {value, type, subtype, attributes: attributes ?? {}};
   });
 
   deepStrictEqual(actual, expected);

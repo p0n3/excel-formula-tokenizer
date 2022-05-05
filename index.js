@@ -27,8 +27,8 @@ var TOK_SUBTYPE_CONCAT = 'concatenate';
 var TOK_SUBTYPE_INTERSECT = 'intersect';
 var TOK_SUBTYPE_UNION = 'union';
 
-function createToken(value, type, subtype = '') {
-  return {value, type, subtype};
+function createToken(value, type, subtype = '', attributes = {}) {
+  return {value, type, subtype, attributes};
 }
 
 class Tokens {
@@ -634,6 +634,7 @@ function tokenize(formula, options) {
     if (token.type == TOK_TYPE_FUNCTION) {
       if (token.value.substr(0, 1) == '@') {
         token.value = token.value.substr(1);
+        token.attributes["hasImplicitIntersectionOperator"] = true;
       }
       continue;
     }

@@ -1,6 +1,6 @@
 {
-  "name": "@modelmap/excel-formula-tokenizer",
-  "version": "2.3.2",
+  "name": "@p0n3/excel-formula-tokenizer",
+  "version": "2.3.3",
   "description": "Tokenize Excel formulas",
   "main": "index.js",
   "typings": "index.d.ts",
@@ -13,8 +13,9 @@
     "parse",
     "tokenize"
   ],
-  "author": "Atsushi Nagase <ngs@modelmap.co> (https://ngs.io)",
+  "author": "Lukasz Tworek <tvoreq@gmail.com>",
   "contributors": [
+    "Atsushi Nagase <ngs@modelmap.co> (https://ngs.io)",
     "Paul Salaets <psalaets@gmail.com>"
   ],
   "homepage": "https://github.com/psalaets/excel-formula-tokenizer",

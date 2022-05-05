@@ -14,7 +14,7 @@ describe('functions', function() {
     [
       '@SUM(1)',
       [
-        ['SUM', 'function', 'start'],
+        ['SUM', 'function', 'start', {hasImplicitIntersectionOperator: true}],
         ['1', 'operand', 'number'],
         ['', 'function', 'stop'],
       ],
