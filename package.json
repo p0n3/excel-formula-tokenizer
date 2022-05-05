@@ -13,7 +13,7 @@
     "parse",
     "tokenize"
   ],
-  "author": "Lukasz Tworek <tvoreq@gmail.com>",
+  "author": "Lukasz Tworek <p0n3@p0n3.net>",
   "contributors": [
     "Atsushi Nagase <ngs@modelmap.co> (https://ngs.io)",
     "Paul Salaets <psalaets@gmail.com>"
@@ -25,7 +25,7 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "mocha": "^3.2.0"
+    "mocha": "^10.0.0"
   },
   "publishConfig": {
     "access": "public"
